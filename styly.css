@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*** reusable ***/
+.row {
+  /* max-width je důležitý pro responzivitu */
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.heading-main h2 {
+  text-align: center;
+  /* margin-top: 20px; */
+  font-size: 30px;
+}
+
+.heading-main h2:after {
+  content: "";
+  display: block;
+  width: 150px;
+  border-bottom: 2px solid #e67e22;
+  margin: 20px auto;
+}
+
+.empty-space {
+  height: 50px;
+}
+
+/*** Header a Pozadí stránky ***/
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("../images/pizza-syr.jpg");
+  height: 100vh;
+  width: 100%;
+  background-position: center center; /*Vycentruje obrázek*/
+  background-size: cover; /*Celý obrázek vyplní plochu*/
+  /* inline-size: fit-content; */
+  background-attachment: fixed;
+}
+
+/* Pozadí navigace */
+.nav-background {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 50;
+  border-bottom: 2px solid #e67e22;
+}
+
+#logo img {
+  width: 200px;
+  position: absolute;
+  top: 9%;
+  left: 4%;
+  opacity: 1;
+}
+
+nav ul {
+  float: right;
+  /* margin-top: 7px; */
+
+  position: fixed;
+  margin-left: 28%;
+  z-index: 100;
+}
+
+nav ul li {
+  display: inline-block;
+  color: #fff;
+  margin-left: 15px;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+  color: #fff;
+  font-size: 25px;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+  border-bottom: 2px solid #e67e22;
+  transition: border-bottom 0.6s;
+}
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.header-text h1 {
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2.2px;
+  word-spacing: 3.5px;
+}
+
+.btn {
+  display: inline-block;
+  border: 1px solid #fff;
+  padding: 5px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-top: 7 px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2.2px;
+  word-spacing: 3.5px;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #e67e22;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  transition: background-color 0.6s;
+  background-color: #b86114;
+}
+
+.btn-empty:link,
+.btn-empty:visited {
+  background-color: transparent;
+  color: #fff;
+  margin-left: 5px;
+}
+
+.btn-empty:hover,
+.btn-empty:active {
+  transition: background-color 0.6s;
+  background-color: #b86114;
+  color: #fff;
+}
+
+/***** Mobile navigation *****/
+.mobile-nav-icon {
+  float: right;
+  margin-top: 4px;
+  display: none;
+}
+
+/****** About-us *******/
+
+.pizza-example img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 4px 7px 10px #000;
+}
+
+/****** Our pizza *******/
+
+.pizza-info img {
+  width: 100.5%;
+  height: 270px;
+  border-radius: 20px;
+  box-shadow: 4px 7px 10px #000;
+}
+
+.text-pizza {
+  margin-bottom: 20px;
+}
+
+.text-pizza div {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #000;
+  text-align: center;
+  /* background-color: #e67e22;
+  color: #fff; */
+  border-radius: 50%;
+  padding: 12px;
+  float: left;
+}
+
+.text-pizza p {
+  margin-left: 60px;
+  font-size: 20px;
+}
+
+/***** Reference *****/
+.reference {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("../images/pizza-syr.jpg");
+  height: 400px;
+  width: 100%;
+  margin-top: 460px;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.reference h2 {
+  color: #fff;
+  padding-top: 40px;
+}
+.reference h2:after {
+  border-bottom: 2px solid #fff;
+}
+
+.one-reference {
+  background-color: #fff;
+  font-size: 20px;
+  border-radius: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  box-shadow: 4px 7px 10px #000;
+  padding: 20px;
+}
+
+.one-reference p {
+  font-style: italic;
+}
+.photo-name {
+  margin-top: 10px;
+}
+
+.photo-name p {
+  margin-left: 60px;
+  padding: 13px;
+  font-size: 20px;
+  font-style: normal;
+  color: #fff;
+  background-color: #e67e22;
+  border-radius: 20px;
+}
+.photo-name img {
+  width: 50px;
+  border-radius: 50%;
+  float: left;
+}
+/***** Photo gallery *****/
+.photo-segment li {
+  list-style: none;
+  /* background-color: #000; */
+  overflow: hidden; /*Skryje přetečený okraj obrázku*/
+  height: 300px;
+  box-shadow: 4px 7px 10px #000;
+  border-radius: 20px;
+}
+
+.photo-segment img {
+  width: 100%;
+  height: 300px;
+  /* opacity: 50%; */
+  /* transform: scale(1.15); */
+}
+
+/* .photo-segment img:hover {
+  transition: transform 0.6s, opacity 0.6s;
+  transform: scale(1);
+  opacity: 1; 
+}*/
+
+/***** Contact form *****/
+.contact-form {
+  max-width: 700px; /* max-width je důležitý pro responzivitu */
+  text-align: center;
+}
+
+.contact-form input {
+  width: 80%;
+  margin: 5px 0;
+  padding: 5px;
+  padding-left: 10px;
+  font-size: 20px;
+  border: 2px solid #e67e22;
+  border-radius: 10px;
+  box-shadow: 4px 7px 10px #000;
+}
+
+.contact-form textarea {
+  width: 80%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  padding: 5px;
+  padding-left: 10px;
+  border: 2px solid #e67e22;
+  border-radius: 10px;
+  box-shadow: 4px 7px 10px #000;
+}
+
+input[type="submit"] {
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #b86114;
+  color: #fff;
+}
+
+input[type="submit"]:hover {
+  background-color: #e67e22;
+  color: #000;
+  transition: 0.6s;
+}
+
+/***** Footer *****/
+.footer-page {
+  background-color: #b86114;
+  margin-top: 30px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.social {
+  text-align: center;
+  margin: 10px;
+}
+
+.social p {
+  display: inline-block;
+}
+
+.social p a:link,
+.social p a:visited {
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.social p a:hover,
+.social p a:active {
+  color: #000;
+}
+
+.footer-text {
+  text-align: center;
+}
+
+/***** Stop floating *****/
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}

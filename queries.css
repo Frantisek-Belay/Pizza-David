@@ -1,0 +1,179 @@
+@media only screen and (max-width: 1140px) {
+  /****** About-us *******/
+  .pizza-example img {
+    margin: 0 10px;
+  }
+
+  .pizza-example .span-1-of-2 {
+    width: 48%;
+  }
+
+  /***** photo-gallery *****/
+  .photo-segment {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  /*
+  .photo-segment .col {
+    margin-left: 0px;
+  }*/
+
+  /***** reference *****/
+  .reference {
+    height: 350px;
+  }
+
+  .col.span-1-of-3.one-reference {
+    width: 48.2%;
+    margin-left: 10px;
+    /*margin-right: 10px;*/
+  }
+
+  .one-reference:nth-child(3) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  /***** reference *****/
+  .reference {
+    margin-top: 440px;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  nav ul li {
+    display: block;
+  }
+
+  .nav-background {
+    /* display: none; */
+  }
+
+  .mobile-nav-back {
+    height: 170px;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-bottom: 2px solid #e67e22;
+    display: none;
+  }
+
+  .mobile-nav-icon {
+    display: inline-block;
+    z-index: 200;
+    position: fixed;
+    right: 2%;
+  }
+
+  nav ul {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  /****** Our pizza *******/
+  .pizza-info .span-1-of-2 {
+    width: 97%;
+  }
+
+  .pizza-info img {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .text-pizza p {
+    padding-top: 12px;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  /****** Our pizza *******/
+  .text-pizza p {
+    padding-top: 0;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  /****** About-us *******/
+  .pizza-example .span-1-of-2 {
+    width: 97%;
+  }
+
+  .pizza-example .col {
+    margin-left: 0;
+  }
+
+  .pizza-example img {
+    margin: 0 10px;
+  }
+
+  /***** photo-gallery *****/
+
+  /*.photo-segment {
+    margin: 0 10px;
+  }*/
+
+  .photo-segment .col {
+    margin-left: 0px;
+  }
+
+  .photo-segment li {
+    width: 100%;
+    /* margin: 1% 0 1% 0; */
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  /***** header *****/
+  .header-text {
+    width: 100%;
+    left: 0%;
+    transform: translate(0%, 0%);
+  }
+
+  .header-text h1 {
+    text-align: center;
+    margin: 0 10px;
+  }
+
+  .btn {
+    display: block;
+    text-align: center;
+    margin: 15px 10px;
+    padding: 15px 0;
+  }
+
+  .btn-empty:link,
+  .btn-empty:visited {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 685px) {
+  /***** reference *****/
+  .col.span-1-of-3.one-reference {
+    width: 97%;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  .photo-name {
+    /* Foto se jménem v referenci */
+    float: right;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  header {
+    /* height: 140vh; */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .text-pizza {
+    margin-left: 10px;
+  }
+}
